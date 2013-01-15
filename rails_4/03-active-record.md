@@ -1,5 +1,5 @@
 !SLIDE
-# Active Record
+# ActiveRecord.new
 
 !SLIDE bullets incremental
 # drop\_table and remove\_column are now reversible
@@ -34,14 +34,14 @@
       {name: "John Smith"}
     ]
 
-!SLIDE
+!SLIDE smaller
 # Callable scope objects
 ## 3.x
     @@@ ruby
     scope :recent, where(published_at: Time.now - 2.weeks
 ## 4.0
     @@@ ruby
-    scope :recent,  -> {where(published_at: Time.now - 2.weeks)}
+    scope :recent,  ->{where(published_at: Time.now - 2.weeks)}
 
 !SLIDE
 # .not

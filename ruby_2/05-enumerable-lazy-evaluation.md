@@ -20,6 +20,3 @@
 
 .notes But actually this isn't any faster in most instances. the
 overhead of the way laxy creates blocks slows the iterators down
-
-!SLIDE
-# [Prime Example]

@@ -6,7 +6,7 @@
 
     @@@ ruby
     Application.routes.draw do
-      resources :arcticles do
+      resources :articles do
         resources :comments
         resources :ratings
       end
@@ -19,7 +19,7 @@
       end
     end
 
-!SLIDE small
+!SLIDE smaller
 # Rails 4.0
 
     @@@ ruby
@@ -32,10 +32,7 @@
         resources :ratings
       end
 
-      resources :arcticles,
-        concerns: [:commentable, :rateable]
-      resources :jobs,
-        concerns: [:commentable, :rateable]
-      resources :profiles,
-        concerns: [:commentable]
+      resources :articles, concerns: [:commentable, :rateable]
+      resources :jobs, concerns: [:commentable, :rateable]
+      resources :profiles, concerns: [:commentable]
     end

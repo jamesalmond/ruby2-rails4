@@ -7,6 +7,7 @@
 !SLIDE
 # Example:
 ## [links]
+.notes we want to take a piece of text and wrap it in some characters
 
 !SLIDE execute
 
@@ -19,10 +20,13 @@
 
     wrap("link", before: "[", after: "]")
 
+
 !SLIDE execute
 # Ruby 1.9
     @@@ ruby
     wrap("link")
+
+.notes what if we want some defaults, or want to leave one out?
 
 !SLIDE execute
 # Ruby 1.9
@@ -32,7 +36,7 @@
 !SLIDE execute
 # Ruby 1.9
     @@@ ruby
-    wrap("link", after: "]")
+    wrap("link", after: "!]")
 
 !SLIDE execute
 
@@ -57,6 +61,8 @@
     end
 
     wrap("link", before: '[', after: ']')
+
+.notes can use them by name in the method rather than inspecting a hash and set defaults
 
 !SLIDE execute
 
